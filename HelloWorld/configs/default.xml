@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration>
+	<feature name="RoboCode"/>
+	<feature name="Radar"/>
+	<feature name="Movement"/>
+	<feature name="Wall_Movement"/>
+	<feature name="Minimum_Risk_Based_Movement"/>
+	<feature name="Wave_Surfing"/>
+	<feature name="HawkOnFire"/>
+	<feature name="Dynamic_Clustering"/>
+	<feature name="Circling"/>
+	<feature name="Musashi_Trick"/>
+	<feature name="Range_Search"/>
+	<feature name="DisplacementVectors"/>
+	<feature name="Targeting"/>
+	<feature name="Head_on_Targeting"/>
+	<feature name="GuessFactor"/>
+	<feature name="PlayItForward"/>
+	<feature name="Shadow_style_melee_gun"/>
+	<feature name="Pattern_Matching"/>
+	<feature name="Symbolic"/>
+	<feature name="Vectorial_Pattern_Matching"/>
+	<feature name="Orbital"/>
+	<feature name="Circular"/>
+	<feature name="Dodging"/>
+	<feature name="Tactics"/>
+	<feature name="One_On_One"/>
+	<feature name="Melee"/>
+	<feature name="Learning"/>
+	<feature name="Between_Rounds"/>
+	<feature name="Between_Matches"/>
+	<feature name="Static_Variables"/>
+</configuration>

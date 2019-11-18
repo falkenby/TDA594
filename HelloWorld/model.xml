@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<featureModel>
+	<properties>
+		<graphics key="showhiddenfeatures" value="true"/>
+		<graphics key="legendautolayout" value="true"/>
+		<graphics key="showshortnames" value="false"/>
+		<graphics key="layout" value="horizontal"/>
+		<graphics key="showcollapsedconstraints" value="true"/>
+		<graphics key="legendhidden" value="false"/>
+		<graphics key="layoutalgorithm" value="1"/>
+	</properties>
+	<struct>
+		<and abstract="true" mandatory="true" name="RoboCode">
+			<feature mandatory="true" name="Radar"/>
+			<or name="Movement">
+				<feature name="Wall_Movement"/>
+				<and name="Minimum_Risk_Based_Movement">
+					<feature name="Wave_Surfing"/>
+					<feature name="HawkOnFire"/>
+				</and>
+				<feature name="Dynamic_Clustering"/>
+				<and name="Circling">
+					<feature name="Musashi_Trick"/>
+				</and>
+				<feature name="Range_Search"/>
+				<feature name="DisplacementVectors"/>
+			</or>
+			<or name="Targeting">
+				<feature name="Head_on_Targeting"/>
+				<feature name="GuessFactor"/>
+				<feature name="PlayItForward"/>
+				<feature name="Shadow_style_melee_gun"/>
+				<or name="Pattern_Matching">
+					<feature name="Symbolic"/>
+					<feature name="Vectorial_Pattern_Matching"/>
+					<feature name="Orbital"/>
+				</or>
+				<feature name="Circular"/>
+			</or>
+			<feature name="Dodging"/>
+			<or name="Tactics">
+				<feature name="One_On_One"/>
+				<feature name="Melee"/>
+			</or>
+			<or name="Learning">
+				<feature name="Between_Rounds"/>
+				<feature name="Between_Matches"/>
+				<feature name="Static_Variables"/>
+			</or>
+		</and>
+	</struct>
+</featureModel>
