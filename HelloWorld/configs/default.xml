@@ -4,10 +4,12 @@
 	<feature name="Radar"/>
 	<feature name="Movement"/>
 	<feature name="Wall_Movement"/>
+	<feature name="Stop_and_go"/>
+	<feature name="HOT"/>
+	<feature name="Perpendicular"/>
 	<feature name="Minimum_Risk_Based_Movement"/>
 	<feature name="Wave_Surfing"/>
 	<feature name="HawkOnFire"/>
-	<feature name="Dynamic_Clustering"/>
 	<feature name="Circling"/>
 	<feature name="Musashi_Trick"/>
 	<feature name="Range_Search"/>
@@ -15,6 +17,8 @@
 	<feature name="Targeting"/>
 	<feature name="Head_on_Targeting"/>
 	<feature name="GuessFactor"/>
+	<feature name="Traditional_Guessfactor"/>
+	<feature name="Dynamic_Clustering_based_Guessfactor"/>
 	<feature name="PlayItForward"/>
 	<feature name="Shadow_style_melee_gun"/>
 	<feature name="Pattern_Matching"/>

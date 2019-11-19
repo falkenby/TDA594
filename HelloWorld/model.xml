@@ -11,38 +11,43 @@
 	</properties>
 	<struct>
 		<and abstract="true" mandatory="true" name="RoboCode">
-			<feature mandatory="true" name="Radar"/>
-			<or name="Movement">
+			<feature abstract="true" mandatory="true" name="Radar"/>
+			<or abstract="true" name="Movement">
 				<feature name="Wall_Movement"/>
-				<and name="Minimum_Risk_Based_Movement">
+				<feature name="Stop_and_go"/>
+				<feature name="HOT"/>
+				<feature name="Perpendicular"/>
+				<or abstract="true" name="Minimum_Risk_Based_Movement">
 					<feature name="Wave_Surfing"/>
 					<feature name="HawkOnFire"/>
-				</and>
-				<feature name="Dynamic_Clustering"/>
+				</or>
 				<and name="Circling">
 					<feature name="Musashi_Trick"/>
 				</and>
 				<feature name="Range_Search"/>
 				<feature name="DisplacementVectors"/>
 			</or>
-			<or name="Targeting">
+			<or abstract="true" name="Targeting">
 				<feature name="Head_on_Targeting"/>
-				<feature name="GuessFactor"/>
+				<or abstract="true" name="GuessFactor">
+					<feature name="Traditional_Guessfactor"/>
+					<feature name="Dynamic_Clustering_based_Guessfactor"/>
+				</or>
 				<feature name="PlayItForward"/>
 				<feature name="Shadow_style_melee_gun"/>
-				<or name="Pattern_Matching">
+				<or abstract="true" name="Pattern_Matching">
 					<feature name="Symbolic"/>
 					<feature name="Vectorial_Pattern_Matching"/>
 					<feature name="Orbital"/>
 				</or>
 				<feature name="Circular"/>
 			</or>
-			<feature name="Dodging"/>
-			<or name="Tactics">
+			<feature abstract="true" name="Dodging"/>
+			<or abstract="true" name="Tactics">
 				<feature name="One_On_One"/>
 				<feature name="Melee"/>
 			</or>
-			<or name="Learning">
+			<or abstract="true" name="Learning">
 				<feature name="Between_Rounds"/>
 				<feature name="Between_Matches"/>
 				<feature name="Static_Variables"/>
